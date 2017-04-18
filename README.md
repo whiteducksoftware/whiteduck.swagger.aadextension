@@ -27,14 +27,14 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
 }
 ```
 # Build and run
-The example within this project is ready to run. All you need is a installed [.NET Core CLI](https://www.microsoft.com/net/download/core):
+The example *SwaggerAAD.API* within this repository is ready to run. All you need is a installed [.NET Core CLI](https://www.microsoft.com/net/download/core):
 
-- Restore the dependencies of the project using ```dotnet restore```
-- Run the project using ```dotnet run```
+- Restore the dependencies of the project using ```dotnet restore```.
+- Run the project using ```dotnet run```.
 - Navigate to [http://localhost:5000/swagger/](http://localhost:5000/swagger/). 
 - Click the Authorize button on the top. 
 - Mark the resource and hit the Authorize button. 
-- Sign-in using the user **whiteduck@wdswagger.onmicrosoft.com** with the password **wd123swagger!**
+- Sign-in using the user ```whiteduck@wdswagger.onmicrosoft.com``` with the password ```wd123swagger!```
 
 <img src="./resources/authorize.gif" alt="Authorize example" style="width: 1160px;"/>
 
