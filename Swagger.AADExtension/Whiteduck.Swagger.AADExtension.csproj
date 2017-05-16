@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>An extension for Swagger ASP.Net Core to authenticate against Azure Active Directory.</Description>
+    <TargetFrameworks>net451;netstandard1.6</TargetFrameworks>
+    <Version>1.0.3</Version>
+    <PackageId>Whiteduck.Swagger.AADExtension</PackageId>
+    <PackageTags>swagger;azureaad;activedirectory;webapi;aspnet;aspnetcore</PackageTags>
+    <PackageProjectUrl>https://github.com/whiteducksoftware/whiteduck.swagger.aadextension</PackageProjectUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.6' ">$(PackageTargetFallback);dnxcore50;portable-net451+win8</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="1.1.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
